@@ -26,8 +26,10 @@ let timestamp = new Date().toLocaleTimeString();
   let timestampSpan = document.createElement('span') 
   timestampSpan.textContent = `Added at ${timestamp}`;
   //styling timestamp
-  timestampSpan.style.color = 'white'
-  timestampSpan.style.fontSize  ='0.9px'
+  timestampSpan.style.color = 'yellow'
+  timestampSpan.style.fontSize  ='0.8em'
+
+  
 //creates list items
 let li = document.createElement('li')
 li.textContent = guestName + " "
@@ -38,7 +40,12 @@ removeBtn.textContent = 'remove';
 removeBtn.addEventListener('click', () => {
     li.remove();
    
-});//creates edit button
+});
+  li.appendChild(timestampSpan);
+
+  li.appendChild(removeBtn);
+
+//creates edit button
 let editBtn = document.createElement('button');
   editBtn.textContent = 'edit';
   
@@ -66,11 +73,9 @@ if(rsvpBtn.textContent ==='not attending'){  // functioning button showing guest
   console.log('not attending')
 }
 })
-//appends elements to list items
-  
-  li.appendChild(timestampSpan);
+//appends elements to list item
  
-  li.appendChild(removeBtn);
+  
   li.appendChild(editBtn);
   
   li.appendChild(rsvpBtn);
