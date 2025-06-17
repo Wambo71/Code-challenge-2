@@ -27,7 +27,7 @@ let timestamp = new Date().toLocaleTimeString();
   timestampSpan.textContent = `Added at ${timestamp}`;
   //styling timestamp
   timestampSpan.style.color = 'white'
-  timestampSpan.style.fontSize  ='0.8em'
+  timestampSpan.style.fontSize  ='0.9px'
 //creates list items
 let li = document.createElement('li')
 li.textContent = guestName + " "
@@ -38,8 +38,7 @@ removeBtn.textContent = 'remove';
 removeBtn.addEventListener('click', () => {
     li.remove();
    
-});
-//creates edit button
+});//creates edit button
 let editBtn = document.createElement('button');
   editBtn.textContent = 'edit';
   
