@@ -83,7 +83,5 @@ No external libraries required — just a modern browser!
 -Wambui Karanja
    ## License
    Copyright (c) 2025,Wambui karanja
-   permission is hereby granted free of charge to anyperson obtaining a copy of this software and associated documentation files
+   permission is hereby granted free of charge to anyperson obtaining a copy of this software and associated documentation files.
     
-
-📜 License
